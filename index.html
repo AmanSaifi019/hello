@@ -130,11 +130,22 @@
 
 
     <!-- Testimonials Section -->
-    <section class="bg-dark text-white py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">What Students Say</h2>
-            <div class="row">
-                <div class="col-md-4">
+   
+                    <!-- Testimonials Section -->
+<section class="bg-dark text-white py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">What Students Say</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></li>
+                <li data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></li>
+            </ol>
+            
+            <!-- Carousel Inner -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
                     <div class="card bg-secondary text-white mb-3">
                         <div class="card-body text-center">
                             <blockquote class="blockquote mb-0">
@@ -144,7 +155,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="carousel-item">
                     <div class="card bg-secondary text-white mb-3">
                         <div class="card-body text-center">
                             <blockquote class="blockquote mb-0">
@@ -154,7 +165,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="carousel-item">
                     <div class="card bg-secondary text-white mb-3">
                         <div class="card-body text-center">
                             <blockquote class="blockquote mb-0">
@@ -165,8 +176,21 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- Controls -->
+            <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
         </div>
-    </section>
+    </div>
+</section>
+
+
 
 
 
